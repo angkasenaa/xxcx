@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div {
+            height: 250px;
+            width: 400px;
+            text-align: center;
+            font-size: 20px;
+            font-family: monospace;
+        }
+        button {
+            height: 50px;
+            width: 80px;
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <script>
+        console.log("hallo")
+        var name = prompt("Dengan Siapa?")
+        document.write("<h1> Hallo " + name + "</h1>")
+    </script>
+    <script>
+        let today = new Date();
+        let r = { weekday: 'long'};
+        let day = today.toLocaleDateString ('id-ID' , r);
+        document.write("<p> Selamat Hari " + day + "</p>");
+    </script>
+    <p>Semoga Harimu Menyenangkan</p>
+    <p>Mau lanjut kah?</p>
+    <button onclick="window.location.href='love.html'">Next</button>
+    </div>
+</body>
+</html>
